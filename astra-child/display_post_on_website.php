@@ -67,6 +67,9 @@ get_header();
         <option value="Paramedic" data-domain="healthcare-medical" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Paramedic") ? "selected" : ""; ?>>Paramedic</option>
         <option value="Nutritionist" data-domain="healthcare-medical" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Nutritionist") ? "selected" : ""; ?>>Nutritionist</option>
         <option value="Psychologist" data-domain="healthcare-medical" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Psychologist") ? "selected" : ""; ?>>Psychologist</option>
+        /**** Nisar added Dec 17, 2025 *******/
+        <option value="Gynacologist" data-domain="healthcare-medical" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Psychologist") ? "selected" : ""; ?>>Psychologist</option>
+        
 
         <!-- 3. Trades & Technical -->
         <option value="Electrician" data-domain="trades-technical" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Electrician") ? "selected" : ""; ?>>Electrician</option>
@@ -79,6 +82,11 @@ get_header();
         <option value="Painter" data-domain="trades-technical" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Painter") ? "selected" : ""; ?>>Painter</option>
         <option value="Roofer" data-domain="trades-technical" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Roofer") ? "selected" : ""; ?>>Roofer</option>
         <option value="Auto Technician" data-domain="trades-technical" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Auto Technician") ? "selected" : ""; ?>>Auto Technician</option>
+        /***** Nisar adding new expertise Dec 17, 2025 ****/
+        <option value="Auto Repair" data-domain="trades-technical" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Auto Technician") ? "selected" : ""; ?>>Auto Technician</option>
+        <option value="Auto Collision" data-domain="trades-technical" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Auto Technician") ? "selected" : ""; ?>>Auto Technician</option>
+        <option value="Auto Tires/Wheel" data-domain="trades-technical" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Auto Technician") ? "selected" : ""; ?>>Auto Technician</option>
+
 
         <!-- 4. Education & Training -->
         <option value="School Teacher" data-domain="education-training" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "School Teacher") ? "selected" : ""; ?>>School Teacher</option>
@@ -169,9 +177,21 @@ get_header();
         <option value="Other" data-domain="logistics-transportation" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Other") ? "selected" : ""; ?>>Other</option>
         <option value="Other" data-domain="other-professions" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Other") ? "selected" : ""; ?>>Other</option>
         <option value="Other" data-domain="engineering" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Other") ? "selected" : ""; ?>>Other</option>
-
+  
+        
         <!-- 12 Miscellaneous -->
         <option value="Other" data-domain="miscellaneous" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Other") ? "selected" : ""; ?>>Other</option>
+
+        /***** Nisar added new Domains Dec 17, 2025 */
+        <!-- 13 Food -->
+        <option value="Other" data-domain="miscellaneous" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Catering") ? "selected" : ""; ?>>Other</option>
+        <option value="Other" data-domain="miscellaneous" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Home Order") ? "selected" : ""; ?>>Other</option>
+        <option value="Other" data-domain="miscellaneous" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Restaurant") ? "selected" : ""; ?>>Other</option>
+
+         <!-- 14 Events/Party -->
+        <option value="Other" data-domain="miscellaneous" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Banquette Halls") ? "selected" : ""; ?>>Other</option>
+        <option value="Other" data-domain="miscellaneous" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Conferences") ? "selected" : ""; ?>>Other</option>
+        <option value="Other" data-domain="miscellaneous" <?php echo (isset($_GET['expertise']) && $_GET['expertise'] == "Party") ? "selected" : ""; ?>>Other</option>
 
       </select>
 
@@ -736,6 +756,7 @@ get_header();
     });
   });
 </script>
+
 
 
 <?php get_footer(); ?>
